@@ -5,24 +5,37 @@
 
 	let started = false;
 	let musicStarted = false;
+	let volumeOn = true;
+
+	const volume = 0.7;
+	const onVolumeClick = (event: MouseEvent) => {
+		event.stopPropagation();
+		volumeOn = !volumeOn;
+	};
 
 	var theme = new Howl({
 		src: ['theme.mp3'],
 		loop: true,
-		volume: 0.7
+		volume
 	});
 
 	$: if (started && !musicStarted) {
 		musicStarted = true;
 		theme.play();
 	}
+
+	$: if (volumeOn) {
+		theme.volume(volume);
+	} else {
+		theme.volume(0);
+	}
 </script>
 
 <main>
 	{#if started}
-		<Dialogue />
+		<Dialogue {onVolumeClick} {volumeOn} />
 	{:else}
-		<Start onStart={() => (started = true)} />
+		<Start onStart={() => (started = true)} {onVolumeClick} {volumeOn} />
 	{/if}
 </main>
 

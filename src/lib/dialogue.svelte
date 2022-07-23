@@ -1,5 +1,9 @@
 <script lang="ts">
 	import Dialogue from '$lib/components/dialogue.svelte';
+	import Sound from './components/sound.svelte';
+
+	export let onVolumeClick: () => void;
+	export let volumeOn: boolean;
 
 	let replicas: string[][] = [
 		['Hello, there!', 'Glad to meet you!'],
@@ -32,9 +36,15 @@
 </script>
 
 <section>
+	<Sound
+		{volumeOn}
+		onClick={onVolumeClick}
+		filter="invert(43%) sepia(10%) saturate(2082%) hue-rotate(167deg) brightness(95%) contrast(90%)"
+	/>
 	<div class="stand" />
+	<img class="oak" src="/oak.png" alt="Professor Oak" />
 	{#if showDialogue}
-		<Dialogue {outOfReplicas} {lines} onClick={incrementReplicaIdx} />
+		<Dialogue {outOfReplicas} {lines} onClick={incrementReplicaIdx} {volumeOn} />
 	{/if}
 	<audio autoplay muted src="theme.mp3" />
 </section>
@@ -78,5 +88,12 @@
 		background-color: var(--stand);
 		border-radius: 50%;
 		border: 10px solid var(--stand-border);
+	}
+
+	.oak {
+		width: 250px;
+		position: absolute;
+		bottom: 40%;
+		left: calc(50% - 140px);
 	}
 </style>

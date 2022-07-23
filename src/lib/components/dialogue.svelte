@@ -4,6 +4,7 @@
 	export let onClick: () => void;
 	export let lines: string[];
 	export let outOfReplicas: boolean;
+	export let volumeOn: boolean;
 
 	var click = new Howl({
 		src: ['click.wav']
@@ -46,9 +47,10 @@
 	};
 
 	const onClickLocal = () => {
-		if (!outOfReplicas || !typewritingEnded) {
+		if ((!outOfReplicas || !typewritingEnded) && volumeOn) {
 			click.play();
 		}
+
 		if (typewritingEnded) {
 			onClick();
 		} else {
@@ -87,5 +89,6 @@
 		font-size: 52px;
 		color: #62625b;
 		text-shadow: 4px 4px 0 #bfcaca;
+		user-select: none;
 	}
 </style>

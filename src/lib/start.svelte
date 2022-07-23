@@ -1,5 +1,10 @@
 <script lang="ts">
+	import Sound from './components/sound.svelte';
+
 	export let onStart: () => void;
+	export let onVolumeClick: () => void;
+	export let volumeOn: boolean;
+
 	const onKeyboardStart = (event: KeyboardEvent) => {
 		if (event.key === 'Space') {
 			onStart();
@@ -13,9 +18,13 @@
 </script>
 
 <section on:click={onStart} on:keypress={onKeyboardStart}>
-	{#if visible}
-		<h1>PRESS START</h1>
-	{/if}
+	<Sound
+		{volumeOn}
+		onClick={onVolumeClick}
+		filter="invert(89%) sepia(2%) saturate(13%) hue-rotate(47deg) brightness(95%) contrast(87%);"
+	/>
+	<img src="/rzrus-page.png" alt="rzru's page" />
+	<h1 style="visibility: {visible ? 'visible' : 'hidden'};">PRESS START</h1>
 </section>
 
 <style>
@@ -24,6 +33,8 @@
 		width: 100%;
 		background-color: black;
 		display: flex;
+		flex-direction: column;
+		gap: 150px;
 		align-items: center;
 		justify-content: center;
 	}
