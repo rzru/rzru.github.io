@@ -1,6 +1,6 @@
 <script lang="ts">
 	export let volumeOn: boolean;
-	export let onClick: () => void;
+	export let onClick: (event: MouseEvent) => void;
 	export let filter: string;
 
 	$: src = volumeOn ? 'volume-up.svg' : 'volume-mute.svg';

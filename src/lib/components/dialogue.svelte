@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { Howl } from 'howler';
+	import Arrow from '$lib/components/arrow.svelte';
 
 	export let onClick: () => void;
 	export let lines: string[];
@@ -68,8 +69,13 @@
 </script>
 
 <div class="dialogue">
-	{#each renderedLines as line}
-		<div>{line}</div>
+	{#each renderedLines as line, i}
+		<div class="line">
+			{line}
+			{#if typewritingEnded && i === renderedLines.length - 1 && !outOfReplicas}
+				<Arrow />
+			{/if}
+		</div>
 	{/each}
 </div>
 
@@ -81,14 +87,19 @@
 		width: calc(98% - 66px);
 		margin: 1%;
 		border-radius: 50px;
-		background-color: #f3f8f4;
-		border: 8px solid #a1d0e0;
-		outline: 4px solid #47739b;
+		background-color: var(--dialogue-background);
+		border: 8px solid var(--dialogue-border);
+		outline: 4px solid var(--dialogue-outline);
 		height: calc(22% - 50px);
 		padding: 25px;
 		font-size: 52px;
-		color: #62625b;
-		text-shadow: 4px 4px 0 #bfcaca;
+		color: var(--dialogue-text);
+		text-shadow: 4px 4px 0 var(--dialogue-text-shadow);
 		user-select: none;
+	}
+
+	.line {
+		position: relative;
+		width: fit-content;
 	}
 </style>

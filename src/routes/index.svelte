@@ -1,6 +1,6 @@
 <script lang="ts">
-	import Dialogue from '$lib/dialogue.svelte';
-	import Start from '$lib/start.svelte';
+	import Dialogue from '$lib/stages/dialogue.svelte';
+	import Start from '$lib/stages/start.svelte';
 	import { Howl } from 'howler';
 
 	let started = false;
@@ -24,11 +24,7 @@
 		theme.play();
 	}
 
-	$: if (volumeOn) {
-		theme.volume(volume);
-	} else {
-		theme.volume(0);
-	}
+	$: theme.volume(volumeOn ? volume : 0);
 </script>
 
 <main>
@@ -69,5 +65,16 @@
 
 		--stand: #c5edd5;
 		--stand-border: #92ccac;
+
+		--arrow: #b2060b;
+
+		--dialogue-background: #f3f8f4;
+		--dialogue-border: #a1d0e0;
+		--dialogue-outline: #47739b;
+		--dialogue-text: #62625b;
+		--dialogue-text-shadow: #bfcaca;
+
+		--select-outline: #4d5372;
+		--select-border: #736b85;
 	}
 </style>

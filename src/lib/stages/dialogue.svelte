@@ -1,8 +1,9 @@
 <script lang="ts">
 	import Dialogue from '$lib/components/dialogue.svelte';
-	import Sound from './components/sound.svelte';
+	import Select from '$lib/components/select.svelte';
+	import Sound from '$lib/components/sound.svelte';
 
-	export let onVolumeClick: () => void;
+	export let onVolumeClick: (event: MouseEvent) => void;
 	export let volumeOn: boolean;
 
 	let replicas: string[][] = [
@@ -10,7 +11,7 @@
 		["Welcome to the rzru's webpage!"],
 		['My name is OAK.'],
 		['This world...'],
-		['...is inhabited far and wide by information about rzru.'],
+		['...is inhabited far and wide', 'by information about rzru.'],
 		['rzru is a skilled frontend developer.', "He's also a good Rust developer."],
 		['As for myself...'],
 		['...I just love this guy.'],
@@ -33,6 +34,7 @@
 
 	$: lines = replicas[currentReplicaIdx] || [];
 	$: outOfReplicas = currentReplicaIdx === replicas.length - 1;
+	$: showSelect = currentReplicaIdx >= replicas.length - 2;
 </script>
 
 <section>
@@ -45,6 +47,9 @@
 	<img class="oak" src="/oak.png" alt="Professor Oak" />
 	{#if showDialogue}
 		<Dialogue {outOfReplicas} {lines} onClick={incrementReplicaIdx} {volumeOn} />
+	{/if}
+	{#if showSelect}
+		<Select />
 	{/if}
 	<audio autoplay muted src="theme.mp3" />
 </section>

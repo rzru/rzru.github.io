@@ -1,8 +1,8 @@
 <script lang="ts">
-	import Sound from './components/sound.svelte';
+	import Sound from '$lib/components/sound.svelte';
 
 	export let onStart: () => void;
-	export let onVolumeClick: () => void;
+	export let onVolumeClick: (event: MouseEvent) => void;
 	export let volumeOn: boolean;
 
 	const onKeyboardStart = (event: KeyboardEvent) => {
