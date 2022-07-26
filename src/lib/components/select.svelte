@@ -5,7 +5,7 @@
 	export let volumeOn: boolean;
 
 	const links = [
-		{ href: '/cv', blank: false, name: 'CV' },
+		{ href: '/cv', blank: true, name: 'CV' },
 		{ href: 'https://github.com/rzru', blank: true, name: 'GitHub' },
 		{
 			href: 'https://www.linkedin.com/in/vladimir-polovtsev-789418198/',
@@ -55,7 +55,15 @@
 				{#if i === selectedLinkIdx}
 					<span>►</span>
 				{/if}
-				<a {href} target={blank ? '_blank' : '_self'}>{name}</a>
+				<a
+					on:click={() => {
+						if (volumeOn) {
+							click.play();
+						}
+					}}
+					{href}
+					target={blank ? '_blank' : '_self'}>{name}</a
+				>
 			</li>
 		{/each}
 	</ul>
