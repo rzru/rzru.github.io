@@ -1,24 +1,15 @@
 <script lang="ts">
-	import { Howl } from 'howler';
 	import Arrow from '$lib/components/arrow.svelte';
+	import { Events, KeyCodes } from '$lib/constants';
+	import withClickSound from '$lib/with-click-sound';
 
 	export let onClick: () => void;
 	export let lines: string[];
 	export let outOfReplicas: boolean;
 	export let volumeOn: boolean;
 
-	var click = new Howl({
-		src: ['click.wav']
-	});
-
-	let interval: ReturnType<typeof setInterval>;
+	const click = withClickSound();
 	const typewritingSpeed = 80;
-
-	let renderedLines: string[] = [];
-	let lineIdx = 0;
-	let charIdx = 0;
-	let typewritingEnded = false;
-
 	const restartTypewriter = (lines: string[]) => {
 		const resetReplica = () => {
 			renderedLines = [];
@@ -46,7 +37,6 @@
 			charIdx++;
 		}, typewritingSpeed);
 	};
-
 	const onClickLocal = () => {
 		if ((!outOfReplicas || !typewritingEnded) && volumeOn) {
 			click.play();
@@ -61,7 +51,18 @@
 		}
 	};
 
-	document.addEventListener('click', onClickLocal);
+	let interval: ReturnType<typeof setInterval>;
+	let renderedLines: string[] = [];
+	let lineIdx = 0;
+	let charIdx = 0;
+	let typewritingEnded = false;
+
+	document.addEventListener(Events.Click, onClickLocal);
+	document.addEventListener(Events.KeyDown, (event) => {
+		if (event.code === KeyCodes.Space) {
+			onClickLocal();
+		}
+	});
 
 	$: {
 		restartTypewriter(lines);

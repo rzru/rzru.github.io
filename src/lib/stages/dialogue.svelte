@@ -6,6 +6,12 @@
 	export let onVolumeClick: (event: MouseEvent) => void;
 	export let volumeOn: boolean;
 
+	const incrementReplicaIdx = () => {
+		if (currentReplicaIdx < replicas.length - 1) {
+			currentReplicaIdx++;
+		}
+	};
+
 	let replicas: string[][] = [
 		['Hello, there!', 'Glad to meet you!'],
 		["Welcome to the rzru's webpage!"],
@@ -21,12 +27,6 @@
 	let currentReplicaIdx = 0;
 	let showDialogue = false;
 	let outOfReplicas = false;
-
-	const incrementReplicaIdx = () => {
-		if (currentReplicaIdx < replicas.length - 1) {
-			currentReplicaIdx++;
-		}
-	};
 
 	setTimeout(() => {
 		showDialogue = true;
@@ -44,14 +44,13 @@
 		filter="invert(43%) sepia(10%) saturate(2082%) hue-rotate(167deg) brightness(95%) contrast(90%)"
 	/>
 	<div class="stand" />
-	<img class="oak" src="/oak.png" alt="Professor Oak" />
+	<img class="oak" src="/images/oak.png" alt="Professor Oak" />
 	{#if showDialogue}
 		<Dialogue {outOfReplicas} {lines} onClick={incrementReplicaIdx} {volumeOn} />
 	{/if}
 	{#if showSelect}
-		<Select />
+		<Select {volumeOn} />
 	{/if}
-	<audio autoplay muted src="theme.mp3" />
 </section>
 
 <style>

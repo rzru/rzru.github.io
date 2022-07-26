@@ -3,7 +3,7 @@
 	export let onClick: (event: MouseEvent) => void;
 	export let filter: string;
 
-	$: src = volumeOn ? 'volume-up.svg' : 'volume-mute.svg';
+	$: src = volumeOn ? 'icons/volume-up.svg' : 'icons/volume-mute.svg';
 	$: alt = volumeOn ? 'Sound On' : 'Sound Off';
 </script>
 
@@ -11,11 +11,11 @@
 
 <style>
 	img {
-		height: 48px;
-		width: 48px;
+		height: 32px;
+		width: 32px;
 		position: absolute;
-		top: 15px;
-		right: 20px;
+		top: 8px;
+		right: 15px;
 		cursor: pointer;
 		user-select: none;
 	}

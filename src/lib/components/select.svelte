@@ -1,4 +1,9 @@
 <script lang="ts">
+	import { Events, KeyCodes } from '$lib/constants';
+	import withClickSound from '$lib/with-click-sound';
+
+	export let volumeOn: boolean;
+
 	const links = [
 		{ href: '/cv', blank: false, name: 'CV' },
 		{ href: 'https://github.com/rzru', blank: true, name: 'GitHub' },
@@ -11,8 +16,36 @@
 		{ href: 'mailto:rzzzzru@gmail.com', blank: false, name: 'Email' },
 		{ href: 'https://github.com/rzru/rzru', blank: true, name: 'Page Repo' }
 	];
+	const click = withClickSound();
+	const navigateList = (event: KeyboardEvent) => {
+		if ([KeyCodes.Up, KeyCodes.Down, KeyCodes.Enter].includes(event.code as KeyCodes) && volumeOn) {
+			click.play();
+		}
+
+		if (event.code === KeyCodes.Up) {
+			if (selectedLinkIdx > 0) {
+				selectedLinkIdx -= 1;
+			} else {
+				selectedLinkIdx = links.length - 1;
+			}
+		}
+
+		if (event.code === KeyCodes.Down) {
+			if (selectedLinkIdx < links.length - 1) {
+				selectedLinkIdx += 1;
+			} else {
+				selectedLinkIdx = 0;
+			}
+		}
+
+		if (event.code === KeyCodes.Enter) {
+			window.open(links[selectedLinkIdx]?.href, '_blank');
+		}
+	};
 
 	let selectedLinkIdx = 0;
+
+	document.addEventListener(Events.KeyDown, navigateList);
 </script>
 
 <nav class="container">
