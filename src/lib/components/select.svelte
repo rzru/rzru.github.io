@@ -14,7 +14,7 @@
 		},
 		{ href: 'https://t.me/soryulangley', blank: true, name: 'Telegram' },
 		{ href: 'mailto:rzzzzru@gmail.com', blank: false, name: 'Email' },
-		{ href: 'https://github.com/rzru/rzru', blank: true, name: 'Page Repo' }
+		{ href: 'https://github.com/rzru/rzru.github.io', blank: true, name: 'Page Repo' }
 	];
 	const click = withClickSound();
 	const navigateList = (event: KeyboardEvent) => {
