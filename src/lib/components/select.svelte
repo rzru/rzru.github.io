@@ -46,35 +46,42 @@
 	let selectedLinkIdx = 0;
 </script>
 
-<nav class="container">
-	<ul>
-		{#each links as { href, blank, name }, i}
-			<li on:mouseenter={() => (selectedLinkIdx = i)}>
-				{#if i === selectedLinkIdx}
-					<span>►</span>
-				{/if}
-				<a
-					on:click={() => {
-						if (volumeOn) {
-							click.play();
-						}
-					}}
-					{href}
-					target={blank ? '_blank' : '_self'}>{name}</a
-				>
-			</li>
-		{/each}
-	</ul>
-</nav>
+<div class="outer">
+	<nav class="container">
+		<ul>
+			{#each links as { href, blank, name }, i}
+				<li on:mouseenter={() => (selectedLinkIdx = i)}>
+					{#if i === selectedLinkIdx}
+						<span>►</span>
+					{/if}
+					<a
+						on:click={() => {
+							if (volumeOn) {
+								click.play();
+							}
+						}}
+						{href}
+						target={blank ? '_blank' : '_self'}>{name}</a
+					>
+				</li>
+			{/each}
+		</ul>
+	</nav>
+</div>
 
 <svelte:body on:keydown={navigateList} />
 
 <style>
-	.container {
+	.outer {
 		position: absolute;
-		background-color: var(--dialogue-background);
+		border: 5px solid var(--select-outline);
+		border-radius: 10px;
 		right: 4.5%;
-		bottom: 26%;
+		bottom: 150px;
+	}
+
+	.container {
+		background-color: var(--dialogue-background);
 		padding: 15px 25px;
 		font-size: 18px;
 		text-transform: uppercase;
@@ -110,11 +117,13 @@
 	}
 
 	@media (min-width: 800px) {
+		.outer {
+			bottom: 250px;
+		}
+
 		.container {
 			font-size: 28px;
 			padding: 25px 40px;
-			outline: 5px solid var(--select-outline);
-			bottom: 26%;
 		}
 
 		span {
@@ -129,11 +138,13 @@
 	}
 
 	@media (min-width: 1200px) {
+		.outer {
+			bottom: 270px;
+		}
+
 		.container {
 			font-size: 32px;
 			padding: 25px 40px;
-			outline: 5px solid var(--select-outline);
-			bottom: 28%;
 		}
 
 		span {

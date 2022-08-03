@@ -69,28 +69,36 @@
 			onClickLocal();
 		}
 	}} />
-<div class="dialogue">
-	{#each renderedLines as line, i}
-		<div class="line">
-			{line}
-			{#if typewritingEnded && i === renderedLines.length - 1 && !outOfReplicas}
-				<Arrow />
-			{/if}
-		</div>
-	{/each}
+
+<div class="outer">
+	<div class="dialogue">
+		{#each renderedLines as line, i}
+			<div class="line">
+				{line}
+				{#if typewritingEnded && i === renderedLines.length - 1 && !outOfReplicas}
+					<Arrow />
+				{/if}
+			</div>
+		{/each}
+	</div>
 </div>
 
 <style>
-	.dialogue {
+	.outer {
+		border: 4px solid var(--dialogue-outline);
 		position: absolute;
 		bottom: 0;
 		left: 0;
-		width: calc(98% - 56px);
+		border-radius: 25px;
+		width: calc(98% - 12px);
 		margin: 1%;
+	}
+
+	.dialogue {
 		background-color: var(--dialogue-background);
 		border: 8px solid var(--dialogue-border);
 		border-radius: 25px;
-		height: calc(22% - 50px);
+		height: 72px;
 		padding: 20px;
 		font-size: 16px;
 		color: var(--dialogue-text);
@@ -106,16 +114,18 @@
 	@media (min-width: 800px) {
 		.dialogue {
 			font-size: 36px;
-			outline: 4px solid var(--dialogue-outline);
 			text-shadow: 4px 4px 0 var(--dialogue-text-shadow);
+			height: 162px;
 		}
 	}
 
 	@media (min-width: 1200px) {
+		.outer {
+			border-radius: 50px;
+		}
 		.dialogue {
 			border-radius: 50px;
 			font-size: 52px;
-			outline: 4px solid var(--dialogue-outline);
 			text-shadow: 4px 4px 0 var(--dialogue-text-shadow);
 		}
 	}
