@@ -37,3 +37,9 @@
 		<Start onStart={() => (started = true)} {onVolumeClick} {volumeOn} />
 	{/if}
 </main>
+
+<style>
+	:global(body) {
+		background-color: var(--black);
+	}
+</style>

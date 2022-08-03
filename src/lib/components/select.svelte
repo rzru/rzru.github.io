@@ -74,12 +74,11 @@
 		position: absolute;
 		background-color: var(--dialogue-background);
 		right: 4.5%;
-		bottom: 28%;
-		padding: 25px 40px;
-		font-size: 32px;
+		bottom: 26%;
+		padding: 15px 25px;
+		font-size: 18px;
 		text-transform: uppercase;
 		border: 10px solid var(--select-border);
-		outline: 5px solid var(--select-outline);
 		border-radius: 5px;
 	}
 
@@ -96,17 +95,55 @@
 	a {
 		text-decoration: none;
 		color: var(--dialogue-text);
-		text-shadow: 3px 3px 0 var(--dialogue-text-shadow);
+		text-shadow: 2px 2px 0 var(--dialogue-text-shadow);
 		width: 100%;
 		display: inline-block;
 	}
 
 	span {
 		color: var(--dialogue-text);
-		text-shadow: 3px 3px 0 var(--dialogue-text-shadow);
+		text-shadow: 2px 2px 0 var(--dialogue-text-shadow);
 		position: absolute;
-		left: -35px;
+		left: -18px;
 		top: -5px;
-		font-size: 32px;
+		font-size: 18px;
+	}
+
+	@media (min-width: 800px) {
+		.container {
+			font-size: 28px;
+			padding: 25px 40px;
+			outline: 5px solid var(--select-outline);
+			bottom: 26%;
+		}
+
+		span {
+			left: -35px;
+			font-size: 28px;
+			text-shadow: 3px 3px 0 var(--dialogue-text-shadow);
+		}
+
+		a {
+			text-shadow: 3px 3px 0 var(--dialogue-text-shadow);
+		}
+	}
+
+	@media (min-width: 1200px) {
+		.container {
+			font-size: 32px;
+			padding: 25px 40px;
+			outline: 5px solid var(--select-outline);
+			bottom: 28%;
+		}
+
+		span {
+			left: -35px;
+			font-size: 32px;
+			text-shadow: 3px 3px 0 var(--dialogue-text-shadow);
+		}
+
+		a {
+			text-shadow: 3px 3px 0 var(--dialogue-text-shadow);
+		}
 	}
 </style>

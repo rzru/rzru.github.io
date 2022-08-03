@@ -81,23 +81,51 @@
 
 	.stand {
 		position: absolute;
-		bottom: calc(40% - 100px);
+		bottom: calc(45% - 100px);
 		left: 0;
 		right: 0;
 		margin-left: auto;
 		margin-right: auto;
 
-		height: 200px;
-		width: 500px;
+		height: 100px;
+		width: 90%;
 		background-color: var(--stand);
 		border-radius: 50%;
 		border: 10px solid var(--stand-border);
 	}
 
 	.oak {
-		width: 250px;
+		width: 150px;
 		position: absolute;
-		bottom: 40%;
-		left: calc(50% - 140px);
+		bottom: 35%;
+		left: calc(50% - 85px);
+	}
+
+	@media (min-width: 800px) {
+		.stand {
+			width: 70%;
+			height: 200px;
+			bottom: calc(35% - 100px);
+		}
+
+		.oak {
+			width: 250px;
+			left: calc(50% - 140px);
+			bottom: 35%;
+		}
+	}
+
+	@media (min-width: 1200px) {
+		.stand {
+			width: 30%;
+			height: 200px;
+			bottom: calc(40% - 100px);
+		}
+
+		.oak {
+			width: 250px;
+			left: calc(50% - 140px);
+			bottom: 40%;
+		}
 	}
 </style>

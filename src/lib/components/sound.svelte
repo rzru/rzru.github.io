@@ -11,8 +11,8 @@
 
 <style>
 	img {
-		height: 32px;
-		width: 32px;
+		height: 48px;
+		width: 48px;
 		position: absolute;
 		top: 8px;
 		right: 15px;

@@ -35,9 +35,8 @@
 
 <style>
 	section {
-		height: 100vh;
 		width: 100%;
-		background: var(--black);
+		height: 100vh;
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -52,7 +51,18 @@
 		-moz-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		-moz-text-fill-color: transparent;
-		font-size: 54px;
-		letter-spacing: 5px;
+		font-size: 24px;
+	}
+
+	@media (min-width: 600px) {
+		h1 {
+			font-size: 36px;
+		}
+	}
+
+	@media (min-width: 1200px) {
+		h1 {
+			font-size: 48px;
+		}
 	}
 </style>
