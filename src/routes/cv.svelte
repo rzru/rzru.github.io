@@ -44,7 +44,7 @@
 			name: 'OZON Technologies',
 			place: 'Moscow, Russia',
 			position: 'Lead Frontend Developer',
-			website: 'ozon.ru',
+			website: 'https://www.ozon.ru/',
 			achievements: [
 				'Conducted technical interviews',
 				'Performed as a speaker on internal technical meetups',
@@ -61,7 +61,7 @@
 			name: 'OZON Technologies',
 			place: 'Moscow, Russia',
 			position: 'Senior Frontend Developer',
-			website: 'ozon.ru',
+			website: 'https://www.ozon.ru/',
 			achievements: [
 				'Developed modern logistics systems with complex graph algorithms',
 				'Developed UI components in own ui-kit solution',
@@ -78,7 +78,7 @@
 			name: 'data3consulting',
 			place: 'Moscow, Russia',
 			position: 'IT-Consultant',
-			website: 'data3.ru',
+			website: 'https://data3.ru/',
 			achievements: [
 				'Wrote documentation about performed algorithmic features',
 				'Coached junior- and middle-level developers',
@@ -94,7 +94,7 @@
 			name: 'data3consulting',
 			place: 'Moscow, Russia',
 			position: 'Team Lead',
-			website: 'data3.ru',
+			website: 'https://data3.ru/',
 			achievements: [
 				'Managed a team of 5+ developers',
 				'Developed modern Web CMS with both Laravel/React.js',
@@ -111,7 +111,7 @@
 			name: 'LavkaLavka',
 			place: 'Moscow, Russia',
 			position: 'Full-Stack Web Developer',
-			website: 'vlavke.ru',
+			website: 'https://vlavke.ru/',
 			achievements: [
 				'Developed SPA with Vue.JS',
 				'Developed user-friendly cryptocurrency projects such as exchangers and market price analyzers in PHP and JavaScript',
