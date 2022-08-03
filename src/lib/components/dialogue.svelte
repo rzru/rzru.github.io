@@ -90,7 +90,7 @@
 		bottom: 0;
 		left: 0;
 		border-radius: 25px;
-		width: calc(98% - 12px);
+		width: calc(98% - 8px);
 		margin: 1%;
 	}
 
@@ -100,7 +100,7 @@
 		border-radius: 25px;
 		height: 72px;
 		padding: 20px;
-		font-size: 16px;
+		font-size: 15px;
 		color: var(--dialogue-text);
 		text-shadow: 2px 2px 0 var(--dialogue-text-shadow);
 		user-select: none;
