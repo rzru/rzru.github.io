@@ -26,6 +26,10 @@
 	$: theme.volume(volumeOn ? volume : 0);
 </script>
 
+<svelte:head>
+	<title>Portfolio | Vladimir Polovtsev</title>
+</svelte:head>
+
 <main>
 	{#if started}
 		<Dialogue {onVolumeClick} {volumeOn} />

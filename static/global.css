@@ -13,8 +13,6 @@
 body {
     margin: 0;
     font-family: 'Pokemon Fire Red';
-    background-color: var(--black);
-    overflow: hidden;
 
     --gradient-start: #438d7b;
     --gradient-med-1: #4c9484;
