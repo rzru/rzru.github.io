@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Events, KeyCodes } from '$lib/constants';
+	import { KeyCodes } from '$lib/constants';
 	import withClickSound from '$lib/with-click-sound';
 
 	export let volumeOn: boolean;
@@ -44,8 +44,6 @@
 	};
 
 	let selectedLinkIdx = 0;
-
-	document.addEventListener(Events.KeyDown, navigateList);
 </script>
 
 <nav class="container">
@@ -68,6 +66,8 @@
 		{/each}
 	</ul>
 </nav>
+
+<svelte:body on:keydown={navigateList} />
 
 <style>
 	.container {

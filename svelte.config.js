@@ -8,8 +8,8 @@ const config = {
 	preprocess: preprocess(),
 	kit: {
 		adapter: adapter({
-			pages: "docs",
-			assets: "docs"
+			pages: 'docs',
+			assets: 'docs'
 		}),
 		prerender: {
 			default: true

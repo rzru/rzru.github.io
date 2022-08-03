@@ -4,8 +4,3 @@ export enum KeyCodes {
 	Space = 'Space',
 	Enter = 'Enter'
 }
-
-export enum Events {
-	Click = 'click',
-	KeyDown = 'keydown'
-}

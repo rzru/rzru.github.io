@@ -1,7 +1,6 @@
 <script lang="ts">
-	import { browser } from '$app/env';
 	import Sound from '$lib/components/sound.svelte';
-	import { Events, KeyCodes } from '$lib/constants';
+	import { KeyCodes } from '$lib/constants';
 
 	export let onStart: () => void;
 	export let onVolumeClick: (event: MouseEvent) => void;
@@ -18,12 +17,9 @@
 	setInterval(() => {
 		visible = !visible;
 	}, 1000);
-
-	$: if (browser) {
-		document.addEventListener(Events.KeyDown, onKeyboardStart);
-	}
 </script>
 
+<svelte:body on:keydown={onKeyboardStart} />
 <section on:click={onStart}>
 	<Sound
 		{volumeOn}

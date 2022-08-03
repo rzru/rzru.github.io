@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Arrow from '$lib/components/arrow.svelte';
-	import { Events, KeyCodes } from '$lib/constants';
+	import { KeyCodes } from '$lib/constants';
 	import withClickSound from '$lib/with-click-sound';
 
 	export let onClick: () => void;
@@ -57,18 +57,18 @@
 	let charIdx = 0;
 	let typewritingEnded = false;
 
-	document.addEventListener(Events.Click, onClickLocal);
-	document.addEventListener(Events.KeyDown, (event) => {
-		if (event.code === KeyCodes.Space) {
-			onClickLocal();
-		}
-	});
-
 	$: {
 		restartTypewriter(lines);
 	}
 </script>
 
+<svelte:body
+	on:click={onClickLocal}
+	on:keydown={({ code }) => {
+		if (code === KeyCodes.Space) {
+			onClickLocal();
+		}
+	}} />
 <div class="dialogue">
 	{#each renderedLines as line, i}
 		<div class="line">
