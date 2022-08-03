@@ -1,45 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 @font-face {
-    font-family: 'Pokemon Fire Red';
-    src: url('/fonts/pokemon-firered-leafgreen-font-recreation.ttf');
+	font-family: 'Pokemon Fire Red';
+	src: url('/fonts/pokemon-firered-leafgreen-font-recreation.ttf');
 }
 
 @font-face {
-    font-family: 'Press Start';
-    src: url('/fonts/PressStart2P-Regular.ttf');
+	font-family: 'Press Start';
+	src: url('/fonts/PressStart2P-Regular.ttf');
 }
 
 body {
-    margin: 0;
-    font-family: 'Pokemon Fire Red';
+	margin: 0;
+	font-family: 'Pokemon Fire Red';
 
-    --gradient-start: #438d7b;
-    --gradient-med-1: #4c9484;
-    --gradient-med-2: #66a694;
-    --gradient-med-3: #81b4a5;
-    --gradient-med-4: #97c3b4;
-    --gradient-med-5: #add0c0;
-    --gradient-med-6: #c9e4d5;
-    --gradient-end: #dff4e5;
+	--gradient-start: #438d7b;
+	--gradient-med-1: #4c9484;
+	--gradient-med-2: #66a694;
+	--gradient-med-3: #81b4a5;
+	--gradient-med-4: #97c3b4;
+	--gradient-med-5: #add0c0;
+	--gradient-med-6: #c9e4d5;
+	--gradient-end: #dff4e5;
 
-    --black: #000;
-    --white: #fff;
+	--black: #000;
+	--white: #fff;
 
-    --stand: #c5edd5;
-    --stand-border: #92ccac;
+	--stand: #c5edd5;
+	--stand-border: #92ccac;
 
-    --arrow: #b2060b;
+	--arrow: #b2060b;
 
-    --dialogue-background: #f3f8f4;
-    --dialogue-border: #a1d0e0;
-    --dialogue-outline: #47739b;
-    --dialogue-text: #62625b;
-    --dialogue-text-shadow: #bfcaca;
+	--dialogue-background: #f3f8f4;
+	--dialogue-border: #a1d0e0;
+	--dialogue-outline: #47739b;
+	--dialogue-text: #62625b;
+	--dialogue-text-shadow: #bfcaca;
 
-    --select-outline: #4d5372;
-    --select-border: #736b85;
+	--select-outline: #4d5372;
+	--select-border: #736b85;
 
-    --start-gradient-bottom: #6f6e6f;
-    --start-gradient-top: #cecece;
+	--start-gradient-bottom: #6f6e6f;
+	--start-gradient-top: #cecece;
 }
