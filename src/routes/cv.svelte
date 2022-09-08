@@ -38,6 +38,17 @@
 	const experience = [
 		{
 			dates: {
+				start: '09/2022',
+				end: 'To Date'
+			},
+			name: 'HelloFresh',
+			place: 'Berlin, Germany',
+			position: 'Senior Frontend Developer',
+			website: 'https://www.hellofresh.com/',
+			achievements: []
+		},
+		{
+			dates: {
 				start: '11/2021',
 				end: '04/2022'
 			},
@@ -168,6 +179,7 @@
 				{/if}
 				<h1>Vladimir Polovtsev (rzru)</h1>
 				<h2>Lead Frontend Developer / Middle Rust Developer</h2>
+				<h3><b>Location:</b> Berlin, Germany</h3>
 				<h3><b>Languages:</b> English: B2, German: A1, Russian: C2</h3>
 				<h3><b>Education:</b> Tertiary, College of Culture And Arts, Arkhangelsk, Russia, 2017</h3>
 				<h3>
@@ -262,8 +274,8 @@
 
 	.me {
 		object-fit: cover;
-		width: 150px;
-		height: 150px;
+		width: 180px;
+		height: 180px;
 	}
 
 	.header-text {

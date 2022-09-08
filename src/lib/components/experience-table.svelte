@@ -78,11 +78,11 @@
 		}
 
 		.dates {
-			width: 15%;
+			width: 11%;
 		}
 
 		.info {
-			width: 85%;
+			width: 89%;
 		}
 
 		.lead {
