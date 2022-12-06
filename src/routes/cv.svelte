@@ -400,10 +400,6 @@
 			justify-content: space-between;
 		}
 
-		.skill {
-			color: var(--select-outline);
-		}
-
 		.download {
 			display: none;
 		}
