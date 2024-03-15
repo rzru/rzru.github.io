@@ -42,4 +42,6 @@ body {
 
 	--start-gradient-bottom: #6f6e6f;
 	--start-gradient-top: #cecece;
+
+	--media-text: rgba(0,0,0,.87);
 }

@@ -34,7 +34,9 @@
 		'NPM',
 		'Cargo'
 	];
+
 	const gifs = ['bulbasaur.gif', 'charmander.gif', 'eevee.gif', 'squirtle.gif', 'pikachu.gif'];
+
 	const experience = [
 		{
 			dates: {
@@ -45,7 +47,16 @@
 			place: 'Berlin, Germany',
 			position: 'Senior Frontend Developer',
 			website: 'https://www.hellofresh.com/',
-			achievements: []
+			achievements: [
+				'Reduced web application load time by 50% within the initial two months of working in the company',
+				'Spearheaded the implementation of key C-Level initiatives',
+				'Pioneered the adoption of GraphQL throughout the organization, enhancing data query efficiency and performance',
+				'Conducted comprehensive coding and architectural interviews',
+				'Led diverse technical initiatives including TypeScript migration, Design System migration, RTL migration, and more',
+				'Authored detailed technical documentation, RFCs, and ADRs for all ongoing initiatives',
+				'Presented as a featured speaker at internal technical meetups, sharing insights and best practices',
+				'Guided and mentored a team of junior and mid-level developers, fostering professional growth and project success',
+			]
 		},
 		{
 			dates: {
@@ -57,11 +68,11 @@
 			position: 'Lead Frontend Developer',
 			website: 'https://www.ozon.ru/',
 			achievements: [
-				'Conducted technical interviews',
-				'Performed as a speaker on internal technical meetups',
-				'Led a team of junior and middle level developers',
-				'Conducted code review and Agile project team meetings, ensured strict code quality control on production level',
-				'Improved architecture and developments stack'
+				'Conducted comprehensive coding and architectural interviews',
+				'Presented as a featured speaker at internal technical meetups, sharing insights and best practices',
+				'Guided and mentored a team of junior and mid-level developers, fostering professional growth and project success',
+				'Chaired code review sessions and Agile project team meetings, enforcing rigorous code quality standards for production readiness',
+				'Optimized architecture and development stack to enhance efficiency and scalability',
 			]
 		},
 		{
@@ -74,27 +85,11 @@
 			position: 'Senior Frontend Developer',
 			website: 'https://www.ozon.ru/',
 			achievements: [
-				'Developed modern logistics systems with complex graph algorithms',
-				'Developed UI components in own ui-kit solution',
-				'Analyzed hidden issues',
-				'Conducted code review and Agile project team meetings, ensured strict code quality control on production level',
-				'Improved architecture and developments stack'
-			]
-		},
-		{
-			dates: {
-				start: '06/2020',
-				end: '01/2022'
-			},
-			name: 'data3consulting',
-			place: 'Moscow, Russia',
-			position: 'IT-Consultant',
-			website: 'https://data3.ru/',
-			achievements: [
-				'Wrote documentation about performed algorithmic features',
-				'Coached junior- and middle-level developers',
-				'Conducted technical interviews',
-				'Performed team-meetings and IT seminars'
+				'Engineered cutting-edge logistics systems using intricate graph algorithms to optimize efficiency',
+				'Crafted custom UI components within a proprietary UI-kit solution, ensuring a seamless user experience',
+				'Identified and resolved intricate technical challenges through thorough analysis',
+				'Chaired code review sessions and Agile project team meetings, enforcing rigorous code quality standards for production readiness',
+				'Optimized architecture and development stack to enhance efficiency and scalability',
 			]
 		},
 		{
@@ -107,11 +102,11 @@
 			position: 'Team Lead',
 			website: 'https://data3.ru/',
 			achievements: [
-				'Managed a team of 5+ developers',
-				'Developed modern Web CMS with both Laravel/React.js',
-				'Ensured teamwork, work on code development',
-				'Developed modern mobile/web application for Moscow District Gas Industry: remote team management.',
-				'Performed integration with many remote services such as SAP, 1C etc.'
+				'Directed and mentored a high-performing team of 5+ developers, fostering collaboration and code excellence',
+				'Engineered a Web CMS utilizing Laravel and React.js, delivering robust and scalable solutions',
+				'Cultivated a collaborative environment to enhance teamwork and streamline code development processes',
+				'Spearheaded the development of a cutting-edge mobile/web application for the Moscow District Gas Industry, enabling remote team management capabilities',
+				'Facilitated seamless integration with various remote services including SAP, 1C, and others to optimize operational efficiency',
 			]
 		},
 		{
@@ -124,12 +119,12 @@
 			position: 'Full-Stack Web Developer',
 			website: 'https://vlavke.ru/',
 			achievements: [
-				'Developed SPA with Vue.JS',
-				'Developed user-friendly cryptocurrency projects such as exchangers and market price analyzers in PHP and JavaScript',
-				'Developed Cryptocurrency exchange module',
-				'Developed monitoring and analysis system for cryptocurrency exchange',
-				'Developed Cryptocurrency bonus system for Evotor cash registers - React Native, developed mobile applications with React Native',
-				'Ensured teamwork, provided daily reports on scope of work.'
+				'Engineered a dynamic Single Page Application (SPA) using Vue.js, delivering an immersive user experience',
+				'Innovated user-friendly cryptocurrency projects including exchangers and market price analyzers, employing PHP and JavaScript for robust functionality',
+				'Designed and implemented a Cryptocurrency exchange module to facilitate seamless transactions',
+				'Created a comprehensive monitoring and analysis system for cryptocurrency exchanges, ensuring real-time insights into market trends',
+				'Developed a cutting-edge Cryptocurrency bonus system for Evotor cash registers using React Native, expanding mobile application capabilities',
+				'Focused on fostering teamwork and transparency, providing daily reports on project progress and scope of work',
 			]
 		}
 	];
@@ -180,7 +175,7 @@
 				<h1>Vladimir Polovtsev (rzru)</h1>
 				<h2>Lead Frontend Developer / Middle Rust Developer</h2>
 				<h3><b>Location:</b> Berlin, Germany</h3>
-				<h3><b>Languages:</b> English: B2, German: A1, Russian: C2</h3>
+				<h3><b>Languages:</b> English: B2, German: B1, Russian: C2</h3>
 				<h3><b>Education:</b> Tertiary, College of Culture And Arts, Arkhangelsk, Russia, 2017</h3>
 				<h3>
 					<b>Contacts:</b> E-mail: <a href="mailto:rzzzzru@gmail.com">rzzzzru@gmail.com</a>,
@@ -382,12 +377,18 @@
 	}
 
 	@media print {
+		.layout {
+			background-color: white;
+		}
+
 		.container {
 			border: none;
 			background-color: white;
 			padding: 0;
 			margin: 0;
 			width: 100%;
+
+			color: var(--media-text);
 		}
 
 		.pokemon {
