@@ -420,7 +420,9 @@
 
 		.skill {
 			font-size: 12px;
-			background-color: var(--select-outline);
+			background-color: var(--white);
+			color: var(--media-text);
+			padding: 0;
 		}
 
 		.me {
