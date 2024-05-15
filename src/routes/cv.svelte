@@ -48,14 +48,13 @@
 			position: 'Senior Frontend Developer',
 			website: 'https://www.hellofresh.com/',
 			achievements: [
-				'Reduced web application load time by 50% within the initial two months of working in the company',
-				'Spearheaded the implementation of key C-Level initiatives',
-				'Pioneered the adoption of GraphQL throughout the organization, enhancing data query efficiency and performance',
-				'Conducted comprehensive coding and architectural interviews',
-				'Led diverse technical initiatives including TypeScript migration, Design System migration, RTL migration, and more',
-				'Authored detailed technical documentation, RFCs, and ADRs for all ongoing initiatives',
-				'Presented as a featured speaker at internal technical meetups, sharing insights and best practices',
-				'Guided and mentored a team of junior and mid-level developers, fostering professional growth and project success',
+				'Reduced web application load time by ~40% within the initial two months of working in the company',
+				'Led the web implementation of key C-Level initiatives',
+				'Led diverse technical initiatives including TypeScript migration, Design System migration, RTL migration and more',
+				'Authored technical documentation, RFCs, and ADRs for all ongoing initiatives',
+				'Was a part of the team that started the adoption of GraphQL throughout the organization',
+				'Presented as a speaker at internal technical meetups, sharing insights and best practices',
+				'Conducted coding and architectural interviews, mentored junior and mid-level developers'
 			]
 		},
 		{
@@ -68,11 +67,10 @@
 			position: 'Lead Frontend Developer',
 			website: 'https://www.ozon.ru/',
 			achievements: [
-				'Conducted comprehensive coding and architectural interviews',
-				'Presented as a featured speaker at internal technical meetups, sharing insights and best practices',
-				'Guided and mentored a team of junior and mid-level developers, fostering professional growth and project success',
-				'Chaired code review sessions and Agile project team meetings, enforcing rigorous code quality standards for production readiness',
-				'Optimized architecture and development stack to enhance efficiency and scalability',
+				'Authored technical documentation, RFCs, and ADRs for all ongoing initiatives',
+				'Moderated code review sessions and Agile project team meetings',
+				'Presented as a speaker at internal technical meetups',
+				'Conducted coding and architectural interviews, mentored junior and mid-level developers'
 			]
 		},
 		{
@@ -85,11 +83,10 @@
 			position: 'Senior Frontend Developer',
 			website: 'https://www.ozon.ru/',
 			achievements: [
-				'Engineered cutting-edge logistics systems using intricate graph algorithms to optimize efficiency',
-				'Crafted custom UI components within a proprietary UI-kit solution, ensuring a seamless user experience',
+				'Engineered logistics systems using intricate graph algorithms to optimize efficiency',
+				'Developed custom UI components within a proprietary UI-kit solution',
 				'Identified and resolved intricate technical challenges through thorough analysis',
-				'Chaired code review sessions and Agile project team meetings, enforcing rigorous code quality standards for production readiness',
-				'Optimized architecture and development stack to enhance efficiency and scalability',
+				'Optimized architecture and development stack to enhance efficiency and scalability'
 			]
 		},
 		{
@@ -103,10 +100,7 @@
 			website: 'https://data3.ru/',
 			achievements: [
 				'Directed and mentored a high-performing team of 5+ developers, fostering collaboration and code excellence',
-				'Engineered a Web CMS utilizing Laravel and React.js, delivering robust and scalable solutions',
-				'Cultivated a collaborative environment to enhance teamwork and streamline code development processes',
-				'Spearheaded the development of a cutting-edge mobile/web application for the Moscow District Gas Industry, enabling remote team management capabilities',
-				'Facilitated seamless integration with various remote services including SAP, 1C, and others to optimize operational efficiency',
+				'Engineered a Web CMS utilizing Laravel and React.js, delivering robust and scalable solutions'
 			]
 		},
 		{
@@ -122,9 +116,7 @@
 				'Engineered a dynamic Single Page Application (SPA) using Vue.js, delivering an immersive user experience',
 				'Innovated user-friendly cryptocurrency projects including exchangers and market price analyzers, employing PHP and JavaScript for robust functionality',
 				'Designed and implemented a Cryptocurrency exchange module to facilitate seamless transactions',
-				'Created a comprehensive monitoring and analysis system for cryptocurrency exchanges, ensuring real-time insights into market trends',
-				'Developed a cutting-edge Cryptocurrency bonus system for Evotor cash registers using React Native, expanding mobile application capabilities',
-				'Focused on fostering teamwork and transparency, providing daily reports on project progress and scope of work',
+				'Created a comprehensive monitoring and analysis system for cryptocurrency exchanges, ensuring real-time insights into market trends'
 			]
 		}
 	];
@@ -175,7 +167,7 @@
 				<h1>Vladimir Polovtsev (rzru)</h1>
 				<h2>Lead Frontend Developer / Middle Rust Developer</h2>
 				<h3><b>Location:</b> Berlin, Germany</h3>
-				<h3><b>Languages:</b> English: B2, German: B1, Russian: C2</h3>
+				<h3><b>Languages:</b> English: C1, German: B1, Russian: C2</h3>
 				<h3><b>Education:</b> Tertiary, College of Culture And Arts, Arkhangelsk, Russia, 2017</h3>
 				<h3>
 					<b>Contacts:</b> E-mail: <a href="mailto:rzzzzru@gmail.com">rzzzzru@gmail.com</a>,
@@ -238,6 +230,7 @@
 	:global(body) {
 		background-color: var(--dialogue-border);
 	}
+
 	.layout {
 		width: 100%;
 		height: 100%;
@@ -403,6 +396,36 @@
 
 		.download {
 			display: none;
+		}
+
+		h1 {
+			font-size: 20px;
+		}
+
+		h2 {
+			font-size: 16px;
+		}
+
+		h3 {
+			font-size: 12px;
+		}
+
+		.block {
+			font-size: 12px;
+		}
+
+		.block-header {
+			font-size: 16px;
+		}
+
+		.skill {
+			font-size: 12px;
+			background-color: var(--select-outline);
+		}
+
+		.me {
+			width: 150px;
+			height: 150px;
 		}
 	}
 </style>

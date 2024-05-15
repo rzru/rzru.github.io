@@ -19,7 +19,7 @@
 <div class="experience">
 	{#each experience as { dates, name, place, position, website, achievements }}
 		<div class="row">
-			<div class="dates">{dates.start} - {dates.end}</div>
+			<div class="dates">{dates.start} -<br /> {dates.end}</div>
 			<div class="info">
 				<div class="lead">
 					<div>
@@ -88,10 +88,6 @@
 		.lead {
 			flex-direction: row;
 			justify-content: space-between;
-		}
-
-		.achievements {
-			width: 82%;
 		}
 	}
 </style>
