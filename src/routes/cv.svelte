@@ -192,16 +192,18 @@
 				<b class="block-header">Summary:</b>
 				<div class="profile">
 					<p>
-						Developer with fundamental knowledge of the entire web stack and computer science in
-						general. My passion is solving unusual puzzles and designing complex interfaces.
+						I'm a developer with a solid grasp of the entire web stack and a deep understanding of
+						computer science. I love tackling unique challenges and crafting intricate, engaging
+						interfaces.
 					</p>
+
 					<p>
-						I have a lot of experience in optimization, animation, <s>reincarnation</s>,
-						architecture, testing, microfrontends, library writing, cooking and video games. I
-						interview, report, mentor junior developers, perform as a speaker, communicate,
-						communicate and communicate again. I have a background in theater, so no problem with
-						soft skills and communication. I can write backend if needed and speak SQL as if it were
-						my native language.
+						I've gained a lot of experience in areas like optimization, animation, architecture,
+						testing, microfrontends, and library development—along with some fun extras like cooking
+						and video games. I also mentor junior devs, conduct interviews, report, give talks, and,
+						above all, communicate—a lot. Thanks to my background in theater, soft skills and
+						connecting with people come naturally to me. Oh, and I can write backend code and speak
+						SQL like it's my native tongue!
 					</p>
 				</div>
 			</div>
