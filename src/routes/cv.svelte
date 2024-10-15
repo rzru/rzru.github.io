@@ -40,8 +40,19 @@
 	const experience = [
 		{
 			dates: {
-				start: '09/2022',
+				start: '07/2024',
 				end: 'To Date'
+			},
+			name: 'HelloFresh',
+			place: 'Berlin, Germany',
+			position: 'Software Staff Engineer',
+			website: 'https://www.hellofresh.com/',
+			achievements: []
+		},
+		{
+			dates: {
+				start: '09/2022',
+				end: '07/2024'
 			},
 			name: 'HelloFresh',
 			place: 'Berlin, Germany',
