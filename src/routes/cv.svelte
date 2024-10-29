@@ -47,7 +47,14 @@
 			place: 'Berlin, Germany',
 			position: 'Software Staff Engineer',
 			website: 'https://www.hellofresh.com/',
-			achievements: []
+			achievements: [
+				'Participated in the development of the architecture of new product and technical initiatives',
+				'Continuously involved in the RFC and ADR writing and review cycle',
+				'Completely rewrote one of the crucial pages from scratch along the way getting rid of legacy code and implementing best practices',
+				'Completed a POC and ultimately integrated GraphQL to the organisations technical stack',
+				'Presented as a speaker at internal technical meetups, sharing insights and best practices',
+				'Conducted coding and architectural interviews, mentored junior and mid-level developers'
+			]
 		},
 		{
 			dates: {
@@ -199,11 +206,11 @@
 
 					<p>
 						I've gained a lot of experience in areas like optimization, animation, architecture,
-						testing, microfrontends, and library development—along with some fun extras like cooking
+						testing, microfrontends, and library development — along with some extras like cooking
 						and video games. I also mentor junior devs, conduct interviews, report, give talks, and,
-						above all, communicate—a lot. Thanks to my background in theater, soft skills and
-						connecting with people come naturally to me. Oh, and I can write backend code and speak
-						SQL like it's my native tongue!
+						above all, communicate — a lot. I have a background in theater, so soft skills and
+						connecting with people come naturally to me. Oh, and I can write backend code (Node /
+						Rust) and speak SQL like it's my native tongue!
 					</p>
 				</div>
 			</div>
