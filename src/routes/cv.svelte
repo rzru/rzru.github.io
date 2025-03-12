@@ -183,9 +183,9 @@
 					</h3>
 				{/if}
 				<h1>Vladimir Polovtsev (rzru)</h1>
-				<h2>Lead Frontend Developer / Middle Rust Developer</h2>
+				<h2>Staff Frontend Engineer</h2>
 				<h3><b>Location:</b> Berlin, Germany</h3>
-				<h3><b>Languages:</b> English: C1, German: B1, Russian: C2</h3>
+				<h3><b>Languages:</b> English: C1, German: B2, Russian: C2</h3>
 				<h3><b>Education:</b> Tertiary, College of Culture And Arts, Arkhangelsk, Russia, 2017</h3>
 				<h3>
 					<b>Contacts:</b> E-mail: <a href="mailto:rzzzzru@gmail.com">rzzzzru@gmail.com</a>,
