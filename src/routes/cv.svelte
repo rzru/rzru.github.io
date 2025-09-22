@@ -46,7 +46,7 @@
 			name: 'Parloa',
 			place: 'Berlin, Germany',
 			position: 'Senior Frontend (Platform) Engineer',
-			website: 'https://www.hellofresh.com/',
+			website: 'https://www.parloa.com',
 			achievements: [
 				'Led the architectural proposal and the design for the next-generation conversational widget',
 				"Drove significant improvements to the company's internal microfrontend infrastructure",
