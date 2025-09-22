@@ -40,8 +40,23 @@
 	const experience = [
 		{
 			dates: {
-				start: '07/2024',
+				start: '07/2025',
 				end: 'To Date'
+			},
+			name: 'Parloa',
+			place: 'Berlin, Germany',
+			position: 'Senior Frontend (Platform) Engineer',
+			website: 'https://www.hellofresh.com/',
+			achievements: [
+				'Led the architectural proposal and the design for the next-generation conversational widget',
+				"Drove significant improvements to the company's internal microfrontend infrastructure",
+				"Advanced the internal server-driven UI platform by refining it's capabilities and expanding it's flexibility for product teams"
+			]
+		},
+		{
+			dates: {
+				start: '07/2024',
+				end: '06/2025'
 			},
 			name: 'HelloFresh',
 			place: 'Berlin, Germany',
@@ -63,7 +78,7 @@
 			},
 			name: 'HelloFresh',
 			place: 'Berlin, Germany',
-			position: 'Senior Frontend Developer',
+			position: 'Senior Frontend Engineer',
 			website: 'https://www.hellofresh.com/',
 			achievements: [
 				'Reduced web application load time by ~40% within the initial two months of working in the company',
@@ -82,7 +97,7 @@
 			},
 			name: 'OZON Technologies',
 			place: 'Moscow, Russia',
-			position: 'Lead Frontend Developer',
+			position: 'Lead Frontend Engineer',
 			website: 'https://www.ozon.ru/',
 			achievements: [
 				'Authored technical documentation, RFCs, and ADRs for all ongoing initiatives',
@@ -98,7 +113,7 @@
 			},
 			name: 'OZON Technologies',
 			place: 'Moscow, Russia',
-			position: 'Senior Frontend Developer',
+			position: 'Senior Frontend Engineer',
 			website: 'https://www.ozon.ru/',
 			achievements: [
 				'Engineered logistics systems using intricate graph algorithms to optimize efficiency',
@@ -128,7 +143,7 @@
 			},
 			name: 'LavkaLavka',
 			place: 'Moscow, Russia',
-			position: 'Full-Stack Web Developer',
+			position: 'Full-Stack Web Engineer',
 			website: 'https://vlavke.ru/',
 			achievements: [
 				'Engineered a dynamic Single Page Application (SPA) using Vue.js, delivering an immersive user experience',
@@ -185,7 +200,7 @@
 				<h1>Vladimir Polovtsev (rzru)</h1>
 				<h2>Staff Frontend Engineer</h2>
 				<h3><b>Location:</b> Berlin, Germany</h3>
-				<h3><b>Languages:</b> English: C1, German: B2, Russian: C2</h3>
+				<h3><b>Languages:</b> English: C1, German: B2, Japanese: N4, Russian: C2</h3>
 				<h3><b>Education:</b> Tertiary, College of Culture And Arts, Arkhangelsk, Russia, 2017</h3>
 				<h3>
 					<b>Contacts:</b> E-mail: <a href="mailto:rzzzzru@gmail.com">rzzzzru@gmail.com</a>,
