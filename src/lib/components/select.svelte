@@ -8,12 +8,19 @@
 		{ href: '/cv', blank: true, name: 'CV' },
 		{ href: 'https://github.com/rzru', blank: true, name: 'GitHub' },
 		{
-			href: 'https://www.linkedin.com/in/vladimir-polovtsev-789418198/',
+			href: 'https://www.linkedin.com/in/rzru/',
 			blank: true,
 			name: 'LinkedIn'
 		},
 		{ href: 'https://t.me/soryulangley', blank: true, name: 'Telegram' },
 		{ href: 'mailto:rzzzzru@gmail.com', blank: false, name: 'Email' },
+		{
+			href: 'https://nightingale.cafe',
+			blank: true,
+			name: 'Nightingale',
+			separatorBefore: true
+		},
+		{ href: 'https://github.com/rzru/suzume', blank: true, name: 'Suzume' },
 		{ href: 'https://github.com/rzru/rzru.github.io', blank: true, name: 'Page Repo' }
 	];
 	const click = withClickSound();
@@ -49,8 +56,8 @@
 <div class="outer">
 	<nav class="container">
 		<ul>
-			{#each links as { href, blank, name }, i}
-				<li on:mouseenter={() => (selectedLinkIdx = i)}>
+			{#each links as { href, blank, name, separatorBefore }, i}
+				<li class:separator={separatorBefore} on:mouseenter={() => (selectedLinkIdx = i)}>
 					{#if i === selectedLinkIdx}
 						<span>►</span>
 					{/if}
@@ -97,6 +104,12 @@
 
 	li {
 		position: relative;
+	}
+
+	.separator {
+		border-top: 3px solid var(--dialogue-text);
+		margin-top: 8px;
+		padding-top: 8px;
 	}
 
 	a {

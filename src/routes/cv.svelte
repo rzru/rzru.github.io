@@ -37,6 +37,20 @@
 
 	const gifs = ['bulbasaur.gif', 'charmander.gif', 'eevee.gif', 'squirtle.gif', 'pikachu.gif'];
 
+	const openSourceProjects = [
+		{
+			name: 'Nightingale',
+			website: 'https://nightingale.cafe',
+			source: 'https://github.com/rzru/nightingale',
+			description: 'Karaoke application with 1.1k+ GitHub stars.'
+		},
+		{
+			name: 'Suzume',
+			source: 'https://github.com/rzru/suzume',
+			description: 'Anki + LLM practice application for language learning.'
+		}
+	];
+
 	const experience = [
 		{
 			dates: {
@@ -48,9 +62,13 @@
 			position: 'Senior Frontend (Platform) Engineer',
 			website: 'https://www.parloa.com',
 			achievements: [
-				'Led the architectural proposal and the design for the next-generation conversational widget',
-				"Drove significant improvements to the company's internal microfrontend infrastructure",
-				"Advanced the internal server-driven UI platform by refining it's capabilities and expanding it's flexibility for product teams"
+				'Acted as a core maintainer of the Server-Driven UI platform',
+				'Expanded schema-driven forms, tables, actions, validation, and documentation',
+				'Improved microfrontend infrastructure and shared tooling',
+				'Strengthened E2E pipelines, auth flows, release automation, and rollback safety',
+				'Contributed to design tokens and an internal component library',
+				'Resolved production issues and cross-team support requests',
+				'Conducted coding and architectural interviews, mentored junior and mid-level developers'
 			]
 		},
 		{
@@ -238,6 +256,29 @@
 				</div>
 			</div>
 			<div class="block">
+				<b class="block-header">Open source projects:</b>
+				<div class="projects">
+					{#each openSourceProjects as { name, website, source, description }}
+						<div class="project">
+							<div class="project-title">
+								<b>
+									{#if website}
+										<a href={website} target="_blank">{name}</a>
+									{:else}
+										{name}
+									{/if}
+								</b>
+								{#if source}
+									<span>·</span>
+									<a href={source} target="_blank">GitHub</a>
+								{/if}
+							</div>
+							<span>{description}</span>
+						</div>
+					{/each}
+				</div>
+			</div>
+			<div class="block">
 				<b class="block-header">Work experience:</b>
 				<ExperienceTable {experience} />
 			</div>
@@ -363,10 +404,28 @@
 		padding: 2px 5px;
 	}
 
-	.profile {
+	.profile,
+	.projects {
 		display: flex;
 		flex-direction: column;
 		gap: 5px;
+	}
+
+	.project {
+		display: flex;
+		flex-direction: column;
+		gap: 2px;
+	}
+
+	.project + .project {
+		border-top: 1px solid var(--select-outline);
+		padding-top: 5px;
+	}
+
+	.project-title {
+		display: flex;
+		gap: 5px;
+		align-items: baseline;
 	}
 
 	img {
@@ -395,6 +454,22 @@
 			flex-direction: row;
 			align-items: center;
 			justify-content: space-between;
+		}
+
+		.projects {
+			flex-direction: row;
+			gap: 15px;
+		}
+
+		.project {
+			flex: 1;
+		}
+
+		.project + .project {
+			border-top: 0;
+			border-left: 1px solid var(--select-outline);
+			padding-top: 0;
+			padding-left: 15px;
 		}
 	}
 
@@ -447,6 +522,22 @@
 
 		.block {
 			font-size: 12px;
+		}
+
+		.projects {
+			flex-direction: row;
+			gap: 12px;
+		}
+
+		.project {
+			flex: 1;
+		}
+
+		.project + .project {
+			border-top: 0;
+			border-left: 1px solid var(--media-text);
+			padding-top: 0;
+			padding-left: 12px;
 		}
 
 		.block-header {

@@ -1,10 +1,10 @@
 {
   ".svelte-kit/runtime/client/start.js": {
-    "file": "_app/immutable/start-75a4a548.js",
+    "file": "_app/immutable/start-0e3373e6.js",
     "src": ".svelte-kit/runtime/client/start.js",
     "isEntry": true,
     "imports": [
-      "_index-32b719fd.js"
+      "_index-15707dc7.js"
     ],
     "dynamicImports": [
       ".svelte-kit/runtime/components/layout.svelte",
@@ -14,56 +14,56 @@
     ]
   },
   ".svelte-kit/runtime/components/layout.svelte": {
-    "file": "_app/immutable/layout.svelte-57637065.js",
+    "file": "_app/immutable/layout.svelte-4d27dbb8.js",
     "src": ".svelte-kit/runtime/components/layout.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-32b719fd.js"
+      "_index-15707dc7.js"
     ]
   },
   ".svelte-kit/runtime/components/error.svelte": {
-    "file": "_app/immutable/error.svelte-f2795040.js",
+    "file": "_app/immutable/error.svelte-e343778a.js",
     "src": ".svelte-kit/runtime/components/error.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-32b719fd.js"
+      "_index-15707dc7.js"
     ]
   },
   "src/routes/cv.svelte": {
-    "file": "_app/immutable/pages/cv.svelte-77c0c107.js",
+    "file": "_app/immutable/pages/cv.svelte-4fc19614.js",
     "src": "src/routes/cv.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-32b719fd.js"
+      "_index-15707dc7.js"
     ],
     "css": [
-      "_app/immutable/assets/cv-15161a94.css"
+      "_app/immutable/assets/cv-41ed270d.css"
     ]
   },
   "src/routes/index.svelte": {
-    "file": "_app/immutable/pages/index.svelte-96a7c8a5.js",
+    "file": "_app/immutable/pages/index.svelte-babd88a1.js",
     "src": "src/routes/index.svelte",
     "isEntry": true,
     "isDynamicEntry": true,
     "imports": [
-      "_index-32b719fd.js"
+      "_index-15707dc7.js"
     ],
     "css": [
-      "_app/immutable/assets/index-d5216099.css"
+      "_app/immutable/assets/index-3d742ed9.css"
     ]
   },
-  "_index-32b719fd.js": {
-    "file": "_app/immutable/chunks/index-32b719fd.js"
+  "_index-15707dc7.js": {
+    "file": "_app/immutable/chunks/index-15707dc7.js"
   },
   "src/routes/cv.css": {
-    "file": "_app/immutable/assets/cv-15161a94.css",
+    "file": "_app/immutable/assets/cv-41ed270d.css",
     "src": "src/routes/cv.css"
   },
   "src/routes/index.css": {
-    "file": "_app/immutable/assets/index-d5216099.css",
+    "file": "_app/immutable/assets/index-3d742ed9.css",
     "src": "src/routes/index.css"
   }
 }
