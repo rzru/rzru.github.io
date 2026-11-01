@@ -21,6 +21,7 @@
 			separatorBefore: true
 		},
 		{ href: 'https://github.com/rzru/suzume', blank: true, name: 'Suzume' },
+		{ href: 'https://rzru.github.io/jcard/', blank: true, name: 'JCard Editor' },
 		{ href: 'https://github.com/rzru/rzru.github.io', blank: true, name: 'Page Repo' }
 	];
 	const click = withClickSound();

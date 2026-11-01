@@ -42,7 +42,7 @@
 			name: 'Nightingale',
 			website: 'https://nightingale.cafe',
 			source: 'https://github.com/rzru/nightingale',
-			description: 'Karaoke application with 1.1k+ GitHub stars.'
+			description: 'Karaoke application with 1.5k+ GitHub stars.'
 		},
 		{
 			name: 'Suzume',
